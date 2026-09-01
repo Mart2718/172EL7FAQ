@@ -31,7 +31,7 @@
       "id": "faq-5",
       "category": "conceptual",
       "question": "How do I know whether an application involves growth or decay?",
-      "answer": "Check the sign or size of the rate. For \\( A(t)=ae^{rt} \\): if \\( r>0 \\), it's growth; if \\( r<0 \\), it's decay. For \\( f(x)=ab^x \\): if \\( b>1 \\), it's growth; if \\( 0<b<1 \\), it's decay — the exact same rule from EL1, now applied inside a real-world context."
+      "answer": "Check the sign or size of the rate. For \\( A(t)=ae^{rt} \\): if \\( r&gt;0 \\), it's growth; if \\( r&lt;0 \\), it's decay. For \\( f(x)=ab^x \\): if \\( b&gt;1 \\), it's growth; if \\( 0&lt;b&lt;1 \\), it's decay — the exact same rule from EL1, now applied inside a real-world context."
     },
     {
       "id": "faq-6",
