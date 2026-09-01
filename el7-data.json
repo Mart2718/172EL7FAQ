@@ -1,0 +1,191 @@
+{
+  "section": "EL7",
+  "title": "Applications of Exponential and Logarithmic Functions",
+  "learningObjective": "Solve application problems using exponential and logarithmic equations.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What makes a word problem an \"exponential\" or \"logarithmic\" application?",
+      "answer": "Look for a quantity that changes by a constant PERCENT or FACTOR over equal time intervals, rather than by a constant amount. Phrases like \"grows by 5% per year,\" \"doubles every 3 hours,\" \"decays at a continuous rate of 17%,\" or \"compounded monthly\" are all signals that you're dealing with exponential change — the same constant-ratio idea from EL1, just embedded in a real context."
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is Newton's Law of Cooling, and what does each part of the formula represent?",
+      "answer": "Newton's Law of Cooling models how an object's temperature changes over time as it adjusts toward the temperature of its surroundings.<div class=\"example-box\"><div class=\"label\">Formula</div><p class=\"math-line\">\\[ T(x) = ab^x + d \\]</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( a \\) is the difference between the starting temperature and the surrounding temperature, \\( b \\) is the decay factor, \\( x \\) is elapsed time, and \\( d \\) is the surrounding (ambient) temperature — which is also the model's horizontal asymptote.</p></div><div class=\"graph-wrap\"><svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"170\" x2=\"290\" y2=\"170\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><polyline points=\"30.0,30.0 42.6,59.3 55.3,82.5 67.9,100.8 80.5,115.3 93.2,126.7 105.8,135.8 118.4,143.0 131.1,148.6 143.7,153.1 156.3,156.6 168.9,159.4 181.6,161.6 194.2,163.4 206.8,164.8 219.5,165.9 232.1,166.7 244.7,167.4 257.4,168.0 270.0,168.4\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"170\" y=\"185\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"700\">asymptote: room temperature</text></svg></div><p class=\"graph-caption\">The coffee cools quickly at first, then levels off as it approaches room temperature — never quite reaching it.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is the compound interest formula, and what does each variable represent?",
+      "answer": "The compound interest formula models an account balance that earns interest at regular intervals throughout the year.<div class=\"example-box\"><div class=\"label\">Formula</div><p class=\"math-line\">\\[ A(t) = P\\left(1+\\dfrac{r}{n}\\right)^{nt} \\]</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( A(t) \\) is the account value after \\( t \\) years, \\( P \\) is the principal (starting amount), \\( r \\) is the annual interest rate as a decimal, and \\( n \\) is the number of times interest compounds per year.</p></div>"
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What is continuous growth/decay, and how is it different from periodic compounding?",
+      "answer": "Continuous growth or decay assumes a quantity is changing constantly, at every single instant, rather than at set intervals (yearly, monthly, etc.) — it's the limiting case of compounding more and more frequently, all the way down to continuously. It always uses base \\( e \\), since \\( e \\) is precisely the constant that arises from that continuous-compounding limit (EL1).<div class=\"example-box\"><div class=\"label\">Formulas</div><p class=\"math-line\">General continuous growth/decay: \\( A(t) = ae^{rt} \\)</p><p class=\"math-line\">Continuous compounding (finance): \\( A(t) = Pe^{rt} \\)</p></div>"
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "How do I know whether an application involves growth or decay?",
+      "answer": "Check the sign or size of the rate. For \\( A(t)=ae^{rt} \\): if \\( r>0 \\), it's growth; if \\( r<0 \\), it's decay. For \\( f(x)=ab^x \\): if \\( b>1 \\), it's growth; if \\( 0<b<1 \\), it's decay — the exact same rule from EL1, now applied inside a real-world context."
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do I build an exponential model from a word problem when I'm given a starting value and one other data point?",
+      "answer": "The starting value IS your \\( a \\). Plug the other data point into \\( f(x)=ab^x \\) along with that \\( a \\), then solve algebraically for \\( b \\).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">In 2006, 80 deer were introduced. By 2012 (6 years later), the population reached 180.</p><p class=\"math-line\">Initial value: \\( a=80 \\)</p><p class=\"math-line\">Plug in: \\( 180=80b^6 \\) &rarr; \\( b^6=2.25 \\) &rarr; \\( b=2.25^{1/6}\\approx 1.1447 \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">Model: \\( N(t)=80(1.1447)^t \\)</p></div>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I build an exponential model from a word problem when I'm given two data points, neither at time zero?",
+      "answer": "Use the exact same method from EL1 for finding an equation from two points: divide the two output values to find the common ratio over however many steps apart they are, take the appropriate root to find \\( b \\), then work backward (or forward) to find \\( a \\)."
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I use the compound interest formula to find the value of an account after a given number of years?",
+      "answer": "Identify \\( P \\), \\( r \\), and \\( n \\) from the problem, plug them in along with the given \\( t \\), and evaluate.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">$5,000 invested at 4% annual interest, compounded quarterly, for 10 years.</p><p class=\"math-line\">\\( P=5000, r=0.04, n=4, t=10 \\)</p><p class=\"math-line\">\\( A(10) = 5000\\left(1+\\dfrac{0.04}{4}\\right)^{4(10)} \\approx \\$7{,}446.55 \\)</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I use the continuous compounding/growth formula, and when do I use it instead of the periodic formula?",
+      "answer": "Use the continuous formula \\( A(t)=Pe^{rt} \\) whenever a problem specifically says \"compounded continuously\" or describes continuous growth/decay (like most natural growth and decay processes, e.g. radioactive decay or bacteria growth) — otherwise, use the periodic formula from faq-3 with whatever compounding frequency \\( n \\) is stated.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">$1,000 invested at 10% compounded continuously for 1 year.</p><p class=\"math-line\">\\( A(1)=1000e^{0.10(1)} \\approx \\$1{,}105.17 \\)</p></div>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How do I solve an application problem for time, like \"when will this population reach a certain size?\"",
+      "answer": "Set the model equal to the target value, then solve for \\( t \\) using logarithms — exactly the EL6 equation-solving method, just with meaning attached to every variable.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Using \\( N(t)=80(1.1447)^t \\) from faq-6, when does the population reach 250?</p><p class=\"math-line\">\\( 250 = 80(1.1447)^t \\) &rarr; \\( 3.125 = 1.1447^t \\)</p><p class=\"math-line\">Take log of both sides: \\( t = \\dfrac{\\log(3.125)}{\\log(1.1447)} \\approx 8.43 \\) years</p></div>"
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I solve a Newton's Law of Cooling problem for the time it takes to reach a certain temperature?",
+      "answer": "Set \\( T(x) \\) equal to the target temperature, isolate the exponential piece by subtracting the surrounding temperature \\( d \\) first, then take the log of both sides and solve for \\( x \\) — same method as faq-10, just with the extra vertical-shift step to undo first.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Using \\( T(x)=70(0.80)^x+20 \\), when does the coffee reach 35°C?</p><p class=\"math-line\">\\( 35=70(0.80)^x+20 \\) &rarr; \\( 15=70(0.80)^x \\) &rarr; \\( 0.2143=0.80^x \\)</p><p class=\"math-line\">\\( x=\\dfrac{\\log(0.2143)}{\\log(0.80)}\\approx 6.9 \\) minutes</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I interpret the asymptote of a Newton's Law of Cooling model in context?",
+      "answer": "The asymptote is exactly the surrounding (ambient) temperature — the value the object's temperature approaches but never quite reaches as time goes on. This is EL2's vertical-shift rule showing up in a real context: the \\( +d \\) in the formula shifts the entire decay curve up to sit right on top of the room's temperature, rather than decaying all the way to zero."
+    },
+    {
+      "id": "faq-13",
+      "category": "sticking-points",
+      "question": "How do I set up and solve a continuous decay problem, like radioactive decay?",
+      "answer": "Use \\( A(t)=ae^{rt} \\) with a NEGATIVE rate \\( r \\) (since it's decay), plug in the given information, and solve for whatever's missing using the same log-based method.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Radon-222 decays continuously at 17.3% per day. How much of a 100 mg sample remains after 3 days?</p><p class=\"math-line\">\\( A(t)=100e^{-0.173t} \\)</p><p class=\"math-line\">\\( A(3)=100e^{-0.173(3)} \\approx 58.35 \\) mg</p></div>"
+    },
+    {
+      "id": "faq-14",
+      "category": "connections",
+      "question": "How does everything from EL1–EL6 come together in this section?",
+      "answer": "This section is the payoff for the entire chapter. EL1 gave you the exponential model and how to build one from data. EL2 gave you the asymptote and shift behavior that explains Newton's Law of Cooling's leveling-off shape. EL3 and EL4 gave you logarithms and their graphs. EL5 gave you the properties needed to manipulate these equations. EL6 gave you the actual technique — taking logs of both sides — for solving for a variable trapped in an exponent. Every single piece from this chapter shows up somewhere in a real application here."
+    },
+    {
+      "id": "faq-15",
+      "category": "connections",
+      "question": "Why do these application skills matter beyond this course?",
+      "answer": "Exponential and logarithmic models are how professionals in finance, biology, chemistry, medicine, and public policy actually describe and predict real change — compound interest projections, drug dosage decay in the bloodstream, population and epidemic modeling, and radiometric dating all rely on exactly the skills built in this chapter. Being able to build a model from real data and then solve it for a specific target is one of the most directly applicable skills in this entire course."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Exponential Growth Function: Population, Base e",
+      "url": "https://www.youtube.com/watch?v=KCDtss0pT_c",
+      "description": "Building and evaluating a continuous population growth model using base e.",
+      "category": "population-decay",
+      "relatedFaqs": [
+        "faq-4",
+        "faq-13"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Evaluate a Given Exponential Function to Predict a Future Population",
+      "url": "https://youtu.be/SbIydBmJePE",
+      "description": "Evaluating an exponential growth model to make a future population prediction.",
+      "category": "population-decay",
+      "relatedFaqs": [
+        "faq-6",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Compounded Interest Problems: Solving for Time",
+      "url": "https://youtu.be/sfoKCgRcAs0",
+      "description": "Solving compound interest problems for the time variable, including using a graphing calculator's time-value-of-money solver.",
+      "category": "finance",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-9"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "id": "app-1",
+      "title": "EL Application Lab",
+      "url": "https://172elapplab.netlify.app/",
+      "description": "Build a model from a real-world scenario, then solve it, across three contexts: Growth (population), Finance (compound interest), and Cooling & Decay. Same two-step process throughout — build the model, then evaluate or solve it for time. Includes a Class Mode for projector-driven discussion.",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "faq-6",
+        "faq-7",
+        "faq-8",
+        "faq-9",
+        "faq-10",
+        "faq-11",
+        "faq-12",
+        "faq-13"
+      ]
+    }
+  ],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Building a Model from a Word Problem",
+        "prompt": "I'm learning to build an exponential model from a word problem. Give me a scenario with a starting value and one other data point (like a population at two different times), and walk me through finding the growth or decay factor and writing the full model. Give me a few more practice problems and check my work."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice the Compound Interest Formula",
+        "prompt": "I'm learning to use the compound interest formula. Give me a scenario with a principal, interest rate, and compounding frequency, and ask me to find the account value after a given number of years. Then give me a scenario where I need to solve for time instead, and walk me through that direction too."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Newton's Law of Cooling",
+        "prompt": "I'm learning to use Newton's Law of Cooling. Give me a scenario with a starting temperature, a surrounding temperature, and a decay factor, and ask me to find the temperature after a given time. Then give me a scenario where I need to solve for the time instead, given a target temperature."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Compare Periodic and Continuous Models",
+        "prompt": "I'm trying to understand when to use the periodic compound interest formula versus the continuous growth formula. Can you give me a few scenarios and ask me to identify which formula applies to each one, based on the wording used? Then check my reasoning and help me understand any I got wrong."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect the Whole EL Chapter to One Application",
+        "prompt": "I've learned exponential functions, their graphs, logarithms, their graphs, log properties, and equation solving throughout this chapter. Can you walk me through one complete real-world application problem — like the deer population example — and point out exactly which skill from which earlier section I'm using at each step?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section EL7 (Applications of Exponential and Logarithmic Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
