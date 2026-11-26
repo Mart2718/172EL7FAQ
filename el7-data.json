@@ -25,7 +25,7 @@
       "id": "faq-4",
       "category": "conceptual",
       "question": "What is continuous growth/decay, and how is it different from periodic compounding?",
-      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Continuous growth or decay assumes a quantity is changing constantly, at every single instant, rather than at set intervals (yearly, monthly, etc.) — it's the limiting case of compounding more and more frequently, all the way down to continuously. It is usually written with base \\( e \\), since \\( e \\) is the constant that comes out of that continuous-compounding limit (EL1).<div class=\"example-box\"><div class=\"label\">Formulas</div><p class=\"math-line\">General continuous growth/decay: \\( A(t) = ae^{rt} \\)</p><p class=\"math-line\">Continuous compounding (finance): \\( A(t) = Pe^{rt} \\)</p></div>"
+      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Continuous growth or decay assumes a quantity is changing constantly, at every single instant, rather than at set intervals (yearly, monthly, etc.) — it's the limiting case of compounding more and more frequently, all the way down to continuously. It is usually written with base \\( e \\), since \\( e \\) is the constant that comes out of that continuous-compounding limit (EL1). The base alone doesn't decide it: any model \\( ab^t \\) can be rewritten as \\( ae^{(\\ln b)t} \\). What matters is what the problem says the rate means: applied once per period (compounded annually, monthly, ...) or at every instant (compounded continuously, a continuous rate).<div class=\"example-box\"><div class=\"label\">Formulas</div><p class=\"math-line\">General continuous growth/decay: \\( A(t) = ae^{rt} \\)</p><p class=\"math-line\">Continuous compounding (finance): \\( A(t) = Pe^{rt} \\)</p></div>"
     },
     {
       "id": "faq-5",
@@ -277,7 +277,7 @@
                   "tab": "tab-apps"
                 }
               ],
-              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its times come out to whole numbers. Keep full calculator precision until the last step."
+              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts are rounded, your time will usually come out close to a whole number, not exactly on one: keep full calculator precision until the last step, then round as the problem asks."
             },
             {
               "id": "el7-t2",
@@ -305,7 +305,7 @@
                   "tab": "tab-apps"
                 }
               ],
-              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its times come out to whole numbers. Keep full calculator precision until the last step."
+              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts are rounded, your time will usually come out close to a whole number, not exactly on one: keep full calculator precision until the last step, then round as the problem asks."
             },
             {
               "id": "el7-t3",
@@ -333,7 +333,7 @@
                   "tab": "tab-apps"
                 }
               ],
-              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its times come out to whole numbers. Keep full calculator precision until the last step."
+              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts are rounded, your time will usually come out close to a whole number, not exactly on one: keep full calculator precision until the last step, then round as the problem asks."
             },
             {
               "id": "el7-t4",
@@ -363,7 +363,7 @@
                   "tab": "tab-apps"
                 }
               ],
-              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its times come out to whole numbers. Keep full calculator precision until the last step."
+              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts are rounded, your time will usually come out close to a whole number, not exactly on one: keep full calculator precision until the last step, then round as the problem asks."
             }
           ]
         },
@@ -393,7 +393,7 @@
                   "tab": "tab-prompts"
                 }
               ],
-              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its times come out to whole numbers. Keep full calculator precision until the last step."
+              "note": "CheckIt rounds amounts to the nearest whole number (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts are rounded, your time will usually come out close to a whole number, not exactly on one: keep full calculator precision until the last step, then round as the problem asks."
             }
           ]
         }
