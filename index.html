@@ -603,7 +603,7 @@
   </div>
 
   <div class="tab-panel" id="panel-videos" role="tabpanel" aria-labelledby="tab-videos">
-    <p class="section-intro">Video explanations and walkthroughs for this section, curated from <a href="https://www.mathispower4u.com" target="_blank" rel="noopener noreferrer" style="color:#a84d16;font-weight:600;">Mathispower4u</a> by James Sousa.</p>
+    <p class="section-intro">Video explanations and walkthroughs for this section: the EL7 walkthrough first, then videos curated from <a href="https://www.mathispower4u.com" target="_blank" rel="noopener noreferrer" style="color:#a84d16;font-weight:600;">Mathispower4u</a> by James Sousa.</p>
     <div id="videos-grid"></div>
   </div>
 
@@ -722,10 +722,11 @@ function renderVideos() {
   }
 
   const categoryLabels = {
-    'population-decay': { title: 'Population Growth & Continuous Decay', desc: 'Start here — building and evaluating continuous growth/decay models' },
+    'walkthrough': { title: 'EL7 Walkthrough', desc: 'Start here — all four CheckIt situations: compound interest, population growth, depreciation, and half-life' },
+    'population-decay': { title: 'Population Growth & Continuous Decay', desc: 'Building and evaluating population growth models, including continuous (base e) models' },
     'finance': { title: 'Compound Interest', desc: 'Applying the compound interest formula, including solving for time' }
   };
-  const categoryOrder = ['population-decay', 'finance'];
+  const categoryOrder = ['walkthrough', 'population-decay', 'finance'];
 
   categoryOrder.forEach(cat => {
     const vids = DATA.videos.filter(v => v.category === cat);

@@ -13,7 +13,7 @@
       "id": "faq-2",
       "category": "conceptual",
       "question": "What is Newton's Law of Cooling, and what does each part of the formula represent?",
-      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Newton's Law of Cooling models how an object's temperature changes over time as it adjusts toward the temperature of its surroundings.<div class=\"example-box\"><div class=\"label\">Formula</div><p class=\"math-line\">\\[ T(x) = ab^x + d \\]</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( a \\) is the difference between the starting temperature and the surrounding temperature, \\( b \\) is the decay factor, \\( x \\) is elapsed time, and \\( d \\) is the surrounding (ambient) temperature — which is also the model's horizontal asymptote.</p></div><div class=\"graph-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable figure: coffee cooling curve\"><svg viewBox=\"0 0 440 250\" font-family=\"Inter, sans-serif\" width=\"440\" style=\"max-width:100%;height:auto\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Graph of T(x) = 70(0.80)^x + 20 for x from 0 to 20 minutes. The temperature starts at 90 degrees Celsius, drops quickly at first, then levels off toward the dashed horizontal asymptote T = 20, the room temperature, without reaching it.\"><line x1=\"60.0\" y1=\"14\" x2=\"60.0\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"60.0\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">0</text><line x1=\"133.2\" y1=\"14\" x2=\"133.2\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"133.2\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">4</text><line x1=\"206.4\" y1=\"14\" x2=\"206.4\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"206.4\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">8</text><line x1=\"279.6\" y1=\"14\" x2=\"279.6\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"279.6\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">12</text><line x1=\"352.8\" y1=\"14\" x2=\"352.8\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"352.8\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">16</text><line x1=\"426.0\" y1=\"14\" x2=\"426.0\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"426.0\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">20</text><line x1=\"60\" y1=\"216.0\" x2=\"426\" y2=\"216.0\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"220.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">0</text><line x1=\"60\" y1=\"175.6\" x2=\"426\" y2=\"175.6\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"179.6\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">20</text><line x1=\"60\" y1=\"135.2\" x2=\"426\" y2=\"135.2\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"139.2\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">40</text><line x1=\"60\" y1=\"94.8\" x2=\"426\" y2=\"94.8\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"98.8\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">60</text><line x1=\"60\" y1=\"54.4\" x2=\"426\" y2=\"54.4\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"58.4\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">80</text><line x1=\"60\" y1=\"14.0\" x2=\"426\" y2=\"14.0\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"18.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">100</text><line x1=\"60\" y1=\"216\" x2=\"426\" y2=\"216\" stroke=\"#4a4a5a\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"14\" x2=\"60\" y2=\"216\" stroke=\"#4a4a5a\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"175.6\" x2=\"426\" y2=\"175.6\" stroke=\"#b04c19\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><polyline points=\"60.0,34.2 63.7,40.4 67.3,46.3 71.0,51.9 74.6,57.3 78.3,62.5 82.0,67.4 85.6,72.1 89.3,76.7 92.9,81.0 96.6,85.1 100.3,89.1 103.9,92.8 107.6,96.4 111.2,99.9 114.9,103.2 118.6,106.4 122.2,109.4 125.9,112.3 129.5,115.0 133.2,117.7 136.9,120.2 140.5,122.6 144.2,124.9 147.8,127.2 151.5,129.3 155.2,131.3 158.8,133.2 162.5,135.1 166.1,136.8 169.8,138.5 173.5,140.2 177.1,141.7 180.8,143.2 184.4,144.6 188.1,145.9 191.8,147.2 195.4,148.5 199.1,149.7 202.7,150.8 206.4,151.9 210.1,152.9 213.7,153.9 217.4,154.8 221.0,155.8 224.7,156.6 228.4,157.4 232.0,158.2 235.7,159.0 239.3,159.7 243.0,160.4 246.7,161.1 250.3,161.7 254.0,162.3 257.6,162.9 261.3,163.5 265.0,164.0 268.6,164.5 272.3,165.0 275.9,165.4 279.6,165.9 283.3,166.3 286.9,166.7 290.6,167.1 294.2,167.5 297.9,167.8 301.6,168.2 305.2,168.5 308.9,168.8 312.5,169.1 316.2,169.4 319.9,169.7 323.5,169.9 327.2,170.2 330.8,170.4 334.5,170.6 338.2,170.8 341.8,171.0 345.5,171.2 349.1,171.4 352.8,171.6 356.5,171.8 360.1,172.0 363.8,172.1 367.4,172.3 371.1,172.4 374.8,172.6 378.4,172.7 382.1,172.8 385.7,172.9 389.4,173.1 393.1,173.2 396.7,173.3 400.4,173.4 404.0,173.5 407.7,173.6 411.4,173.7 415.0,173.7 418.7,173.8 422.3,173.9 426.0,174.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"422\" y=\"193.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b04c19\">asymptote T = 20 (room temperature)</text><text x=\"243\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">x (minutes)</text><text x=\"422\" y=\"26\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">T (°C)</text></svg></div><p class=\"graph-caption\">The coffee cools quickly at first, then levels off as it approaches room temperature — never quite reaching it.</p>"
+      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Newton's Law of Cooling models how an object's temperature changes over time as it adjusts toward the temperature of its surroundings.<div class=\"example-box\"><div class=\"label\">Formula</div><p class=\"math-line\">\\[ T(x) = ab^x + d \\]</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">\\( a \\) is the difference between the starting temperature and the surrounding temperature, \\( b \\) is the decay factor, \\( x \\) is elapsed time, and \\( d \\) is the surrounding (ambient) temperature — which is also the model's horizontal asymptote.</p></div><div class=\"graph-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Scrollable figure: coffee cooling curve\"><svg viewBox=\"0 0 440 250\" font-family=\"Inter, sans-serif\" width=\"440\" style=\"max-width:100%;height:auto\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Graph of T(x) = 70(0.80)^x + 20 for x from 0 to 20 minutes. The temperature starts at 90 degrees Celsius, drops quickly at first, then levels off toward the dashed horizontal asymptote T = 20, the room temperature, without reaching it.\"><line x1=\"60.0\" y1=\"14\" x2=\"60.0\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"60.0\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">0</text><line x1=\"133.2\" y1=\"14\" x2=\"133.2\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"133.2\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">4</text><line x1=\"206.4\" y1=\"14\" x2=\"206.4\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"206.4\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">8</text><line x1=\"279.6\" y1=\"14\" x2=\"279.6\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"279.6\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">12</text><line x1=\"352.8\" y1=\"14\" x2=\"352.8\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"352.8\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">16</text><line x1=\"426.0\" y1=\"14\" x2=\"426.0\" y2=\"216\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"426.0\" y=\"229\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">20</text><line x1=\"60\" y1=\"216.0\" x2=\"426\" y2=\"216.0\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"220.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">0</text><line x1=\"60\" y1=\"175.6\" x2=\"426\" y2=\"175.6\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"179.6\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">20</text><line x1=\"60\" y1=\"135.2\" x2=\"426\" y2=\"135.2\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"139.2\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">40</text><line x1=\"60\" y1=\"94.8\" x2=\"426\" y2=\"94.8\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"98.8\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">60</text><line x1=\"60\" y1=\"54.4\" x2=\"426\" y2=\"54.4\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"58.4\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">80</text><line x1=\"60\" y1=\"14.0\" x2=\"426\" y2=\"14.0\" stroke=\"#e8e8ec\" stroke-width=\"1\"/><text x=\"56\" y=\"18.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">100</text><line x1=\"60\" y1=\"216\" x2=\"426\" y2=\"216\" stroke=\"#4a4a5a\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"14\" x2=\"60\" y2=\"216\" stroke=\"#4a4a5a\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"175.6\" x2=\"426\" y2=\"175.6\" stroke=\"#b04c19\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><polyline points=\"60.0,34.2 63.7,40.4 67.3,46.3 71.0,51.9 74.6,57.3 78.3,62.5 82.0,67.4 85.6,72.1 89.3,76.7 92.9,81.0 96.6,85.1 100.3,89.1 103.9,92.8 107.6,96.4 111.2,99.9 114.9,103.2 118.6,106.4 122.2,109.4 125.9,112.3 129.5,115.0 133.2,117.7 136.9,120.2 140.5,122.6 144.2,124.9 147.8,127.2 151.5,129.3 155.2,131.3 158.8,133.2 162.5,135.1 166.1,136.8 169.8,138.5 173.5,140.2 177.1,141.7 180.8,143.2 184.4,144.6 188.1,145.9 191.8,147.2 195.4,148.5 199.1,149.7 202.7,150.8 206.4,151.9 210.1,152.9 213.7,153.9 217.4,154.8 221.0,155.8 224.7,156.6 228.4,157.4 232.0,158.2 235.7,159.0 239.3,159.7 243.0,160.4 246.7,161.1 250.3,161.7 254.0,162.3 257.6,162.9 261.3,163.5 265.0,164.0 268.6,164.5 272.3,165.0 275.9,165.4 279.6,165.9 283.3,166.3 286.9,166.7 290.6,167.1 294.2,167.5 297.9,167.8 301.6,168.2 305.2,168.5 308.9,168.8 312.5,169.1 316.2,169.4 319.9,169.7 323.5,169.9 327.2,170.2 330.8,170.4 334.5,170.6 338.2,170.8 341.8,171.0 345.5,171.2 349.1,171.4 352.8,171.6 356.5,171.8 360.1,172.0 363.8,172.1 367.4,172.3 371.1,172.4 374.8,172.6 378.4,172.7 382.1,172.8 385.7,172.9 389.4,173.1 393.1,173.2 396.7,173.3 400.4,173.4 404.0,173.5 407.7,173.6 411.4,173.7 415.0,173.7 418.7,173.8 422.3,173.9 426.0,174.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"422\" y=\"193.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b04c19\">asymptote T = 20 (room temperature)</text><text x=\"243\" y=\"246\" text-anchor=\"middle\" font-size=\"11\" fill=\"#4a4a5a\">x (minutes)</text><text x=\"422\" y=\"26\" text-anchor=\"end\" font-size=\"11\" fill=\"#4a4a5a\">T (°C)</text></svg></div><p class=\"graph-caption\">The coffee cools quickly at first, then levels off as it approaches room temperature — never quite reaching it.</p><p>The horizontal asymptote is the room temperature: the \\( +d \\) moves the asymptote from \\( 0 \\) up to \\( d \\) (EL2&rsquo;s vertical shift), so in the model the temperature levels off at \\( d \\) but never reaches it. To find when the object reaches a target temperature, subtract \\( d \\) first, then divide by \\( a \\) and use logs.</p><div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Using \\( T(x)=70(0.80)^x+20 \\), when does the coffee reach 35°C?</p><p class=\"math-line\">\\( 35=70(0.80)^x+20 \\) &rarr; \\( 15=70(0.80)^x \\) &rarr; \\( \\tfrac{15}{70}=\\tfrac{3}{14}=0.80^x \\)</p><p class=\"math-line\">\\( x=\\dfrac{\\log(3/14)}{\\log(0.80)}\\approx 6.9 \\) minutes</p></div>"
     },
     {
       "id": "faq-3",
@@ -66,29 +66,35 @@
     {
       "id": "faq-11",
       "category": "sticking-points",
-      "question": "How do I solve a Newton's Law of Cooling problem for the time it takes to reach a certain temperature?",
-      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Set \\( T(x) \\) equal to the target temperature, isolate the exponential piece by subtracting the surrounding temperature \\( d \\) first, then take the log of both sides and solve for \\( x \\) — the same method as solving a population model for time, with one extra step: undo the vertical shift first.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Using \\( T(x)=70(0.80)^x+20 \\), when does the coffee reach 35°C?</p><p class=\"math-line\">\\( 35=70(0.80)^x+20 \\) &rarr; \\( 15=70(0.80)^x \\) &rarr; \\( \\tfrac{15}{70}=\\tfrac{3}{14}=0.80^x \\)</p><p class=\"math-line\">\\( x=\\dfrac{\\log(3/14)}{\\log(0.80)}\\approx 6.9 \\) minutes</p></div>"
+      "question": "How do I set up and solve a depreciation problem?",
+      "answer": "A value that loses a fixed percent each year keeps the rest: losing \\( r \\) (as a decimal) leaves the factor \\( 1-r \\), so \\( A(t)=A(1-r)^t \\). Losing 5% a year keeps 95%, factor \\( 0.95 \\), not \\( 1.05 \\) or \\( 0.05 \\). To find a value, plug in \\( t \\). To find a time, divide by the starting value, then use logs: \\( t=\\dfrac{\\ln(\\text{target}/A)}{\\ln(1-r)} \\). Both logs are negative, so the time is positive."
     },
     {
       "id": "faq-12",
       "category": "sticking-points",
-      "question": "How do I interpret the asymptote of a Newton's Law of Cooling model in context?",
-      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> The asymptote is exactly the surrounding (ambient) temperature — the value the object's temperature approaches but never quite reaches as time goes on. This is EL2's vertical-shift rule showing up in a real context: the \\( +d \\) in the formula moves the horizontal asymptote from \\( 0 \\) up to the room temperature \\( d \\), so the temperature levels off at \\( d \\) instead of at zero."
+      "question": "How do I solve a half-life problem?",
+      "answer": "Use \\( A(t)=A\\left(\\tfrac12\\right)^{t/h} \\): the exponent \\( \\tfrac{t}{h} \\) counts half-lives. If \\( t \\) is a whole number of half-lives, just halve that many times. If the remaining fraction is not an exact power of \\( \\tfrac12 \\) (CheckIt rounds amounts to whole numbers, so this happens often), divide by the starting amount and use logs: \\( t=h\\cdot\\dfrac{\\ln(\\text{amount}/A)}{\\ln(1/2)} \\)."
     },
     {
       "id": "faq-13",
       "category": "sticking-points",
-      "question": "How do I set up and solve a continuous decay problem, like radioactive decay?",
-      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Use \\( A(t)=ae^{rt} \\) with a NEGATIVE rate \\( r \\) when a problem gives a continuous decay rate, plug in the given information, and solve for whatever is missing with the same log-based method. (EL7 CheckIt half-life problems use \\( A(t)=A\\left(\\tfrac12\\right)^{t/h} \\) instead; see the half-life stop in the guided path.)<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">A radioactive substance decays continuously at 17.3% per day. How much of a 100 mg sample remains after 3 days?</p><p class=\"math-line\">\\( A(t)=100e^{-0.173t} \\)</p><p class=\"math-line\">\\( A(3)=100e^{-0.173(3)}=100e^{-0.519} \\approx 59.51 \\) mg</p></div>"
+      "question": "How should I round my EL7 answers?",
+      "answer": "Keep full calculator precision until the last step. CheckIt gives amounts as whole numbers (the nearest dollar for money), and its answer key gives times as whole numbers. Because the amounts it shows you are rounded, your time will usually come out close to a whole number, not exactly on one, so round your final answer as the problem asks."
     },
     {
       "id": "faq-14",
+      "category": "sticking-points",
+      "question": "How do I set up and solve a continuous decay problem, like radioactive decay?",
+      "answer": "<strong>Extension (beyond the EL7 CheckIt exercise).</strong> Use \\( A(t)=ae^{rt} \\) with a NEGATIVE rate \\( r \\) when a problem gives a continuous decay rate, plug in the given information, and solve for whatever is missing with the same log-based method. (EL7 CheckIt half-life problems use \\( A(t)=A\\left(\\tfrac12\\right)^{t/h} \\) instead; see the half-life FAQ above.)<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">A radioactive substance decays continuously at 17.3% per day. How much of a 100 mg sample remains after 3 days?</p><p class=\"math-line\">\\( A(t)=100e^{-0.173t} \\)</p><p class=\"math-line\">\\( A(3)=100e^{-0.173(3)}=100e^{-0.519} \\approx 59.51 \\) mg</p></div>"
+    },
+    {
+      "id": "faq-15",
       "category": "connections",
       "question": "How does everything from EL1–EL6 come together in this section?",
       "answer": "This section is the payoff for the entire chapter. EL1 gave you the exponential model and how to build one from data. EL2 gave you the asymptote and shift behavior that explains Newton's Law of Cooling's leveling-off shape. EL3 and EL4 gave you logarithms and their graphs. EL5 gave you the properties needed to manipulate these equations. EL6 gave you the actual technique — taking logs of both sides — for solving for a variable trapped in an exponent. Every single piece from this chapter shows up somewhere in a real application here."
     },
     {
-      "id": "faq-15",
+      "id": "faq-16",
       "category": "connections",
       "question": "Why do these application skills matter beyond this course?",
       "answer": "Exponential and logarithmic models are how professionals in finance, biology, chemistry, medicine, and public policy actually describe and predict real change — compound interest projections, drug dosage decay in the bloodstream, population and epidemic modeling, and radiometric dating all rely on exactly the skills built in this chapter. Being able to build a model from real data and then solve it for a specific target is one of the most directly applicable skills in this entire course."
@@ -97,17 +103,33 @@
   "videos": [
     {
       "id": "vid-1",
+      "title": "EL7 video walkthrough: Applications of Exponential and Logarithmic Functions",
+      "url": "https://youtu.be/rOlmQiS1-v8",
+      "description": "A narrated walkthrough of exponential word problems covering all four EL7 CheckIt situations (compound interest, population growth, depreciation, and half-life): setting up the model, finding an amount after a given time, and using logarithms to find how long it takes.",
+      "category": "walkthrough",
+      "relatedFaqs": [
+        "faq-3",
+        "faq-6",
+        "faq-8",
+        "faq-10",
+        "faq-11",
+        "faq-12",
+        "faq-13"
+      ]
+    },
+    {
+      "id": "vid-2",
       "title": "Exponential Growth Function: Population, Base e",
       "url": "https://www.youtube.com/watch?v=KCDtss0pT_c",
       "description": "Extension (beyond the EL7 CheckIt exercise): Building and evaluating a continuous population growth model using base e.",
       "category": "population-decay",
       "relatedFaqs": [
         "faq-4",
-        "faq-13"
+        "faq-14"
       ]
     },
     {
-      "id": "vid-2",
+      "id": "vid-3",
       "title": "Evaluate a Given Exponential Function to Predict a Future Population",
       "url": "https://youtu.be/SbIydBmJePE",
       "description": "Evaluating an exponential growth model to make a future population prediction.",
@@ -118,7 +140,7 @@
       ]
     },
     {
-      "id": "vid-3",
+      "id": "vid-4",
       "title": "Compounded Interest Problems: Solving for Time",
       "url": "https://youtu.be/sfoKCgRcAs0",
       "description": "Extension (beyond the EL7 CheckIt exercise) in part: solves compound interest problems for the time variable, and also uses a graphing calculator's time-value-of-money solver, which is beyond the EL7 CheckIt exercise. On CheckIt, use logarithms.",
@@ -148,7 +170,8 @@
         "faq-10",
         "faq-11",
         "faq-12",
-        "faq-13"
+        "faq-13",
+        "faq-14"
       ]
     }
   ],
@@ -380,8 +403,8 @@
               "coldA": "\\(A(t) = 25{,}000(1.0225)^{2t}\\). (a) \\(25{,}000(1.0225)^{24} \\approx 42{,}644.16\\), about $42,644. (b) \\((1.0225)^{2t} = \\tfrac{50{,}953}{25{,}000} = 2.03812\\), \\(t = \\dfrac{\\ln 2.03812}{2\\ln 1.0225} \\approx 16\\) years.",
               "solution": "r/n = 0.045/2 = 0.0225 and nt = 2t. (a) 25000(1.0225)^24, about 42,644.16, so $42,644. (b) Divide by 25000: 1.0225^(2t) = 2.03812; t = ln 2.03812 / (2 ln 1.0225), about 16.00 years.",
               "mistake": "Using n = 1 for semiannual (it is 2), or not dividing by P first.",
-              "again": "Algae grow exponentially, \\(P(t) = a \\cdot b^t\\). There are 3,000 initially and 17,280 after 2 days. (a) How long will it take for there to be 7,925,423 algae? (b) How many algae will there be after 6 days?",
-              "againA": "\\(b^2 = \\tfrac{17{,}280}{3{,}000} = 5.76\\), \\(b = 2.4\\). (a) \\(2.4^t = \\tfrac{7{,}925{,}423}{3{,}000} \\approx 2{,}641.81\\), \\(t = \\dfrac{\\ln 2{,}641.81}{\\ln 2.4} \\approx 9\\) days. (b) \\(3{,}000(2.4)^6 \\approx 573{,}308.93\\), about 573,309 algae.",
+              "again": "Three more CheckIt-style problems, one for each of the other situations.<br><strong>Population.</strong> Algae grow exponentially, \\(P(t) = a \\cdot b^t\\). There are 3,000 initially and 17,280 after 2 days. (a) How long will it take for there to be 7,925,423 algae? (b) How many algae will there be after 6 days?<br><strong>Depreciation.</strong> An RV is initially valued at $48,000 and depreciates at a rate of 2.75% each year, modeled by \\(A(t) = A(1 - r)^t\\). (c) How much will the RV be worth after 9 years? (d) After how long will the RV be worth $26,725?<br><strong>Half-life.</strong> Plutonium-239 has a half-life of 24,065 years. A scientist has a sample of 720 grams, which decays according to \\(A(t) = A\\left(\\tfrac{1}{2}\\right)^{t/h}\\). (e) After how long will there be 45 grams left? (f) How much will be left after 48,130 years?",
+              "againA": "<strong>Population.</strong> \\(b^2 = \\tfrac{17{,}280}{3{,}000} = 5.76\\), \\(b = 2.4\\). (a) \\(2.4^t = \\tfrac{7{,}925{,}423}{3{,}000} \\approx 2{,}641.81\\), \\(t = \\dfrac{\\ln 2{,}641.81}{\\ln 2.4} \\approx 9\\) days. (b) \\(3{,}000(2.4)^6 \\approx 573{,}308.93\\), about 573,309 algae.<br><strong>Depreciation.</strong> \\(A(t) = 48{,}000(0.9725)^t\\), since \\(1 - 0.0275 = 0.9725\\). (c) \\(48{,}000(0.9725)^9 \\approx 37{,}346.31\\), about $37,346. (d) \\(0.9725^t = \\tfrac{26{,}725}{48{,}000} \\approx 0.55677\\), \\(t = \\dfrac{\\ln 0.55677}{\\ln 0.9725} \\approx 21\\) years.<br><strong>Half-life.</strong> \\(A(t) = 720\\left(\\tfrac{1}{2}\\right)^{t/24{,}065}\\). (e) \\(\\left(\\tfrac{1}{2}\\right)^{t/24{,}065} = \\tfrac{45}{720} = \\tfrac{1}{16}\\), so \\(\\tfrac{t}{24{,}065} = 4\\) and \\(t = 96{,}260\\) years. (f) \\(\\tfrac{48{,}130}{24{,}065} = 2\\) half-lives: \\(720 \\cdot \\tfrac14 = 180\\) grams.",
               "reflect": "How do you know which question needs logs?",
               "related": [
                 {
